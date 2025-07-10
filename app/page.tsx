@@ -18,16 +18,16 @@ const translations = {
   en: {
     nav: {
       home: "Home",
-      about: "About Us",
+      about: "About Me",
       skills: "Skills",
       services: "Services",
-      contact: "Contact Us",
+      contact: "Contact Me",
     },
     hero: {
       welcome: "WELCOME TO MY WEBSITE",
       name: "BAYU SEPTIAN\nNADSER.",
-      contactUs: "Contact Us",
-      followUs: "Follow Us",
+      contactMe: "Contact Me",
+      followMe: "Follow Me",
       introduction: "Introduction",
       title: "Graphic and Design\nUI/UX Design",
       description:
@@ -83,7 +83,7 @@ const translations = {
   id: {
     nav: {
       home: "Beranda",
-      about: "Tentang Kami",
+      about: "Tentang Saya",
       skills: "Keahlian",
       services: "Layanan",
       contact: "Kontak",
@@ -91,8 +91,8 @@ const translations = {
     hero: {
       welcome: "SELAMAT DATANG DI WEBSITE SAYA",
       name: "BAYU SEPTIAN\nNADSER.",
-      contactUs: "Hubungi Kami",
-      followUs: "Ikuti Kami",
+      contactMe: "Hubungi Saya",
+      followMe: "Ikuti Saya",
       introduction: "Perkenalan",
       title: "Grafis dan Desain\nUI/UX Design",
       description:
@@ -139,7 +139,7 @@ const translations = {
       title: "Mari Bekerja Sama",
       description:
         "Siap mewujudkan ide Anda? Mari diskusikan proyek Anda dan ciptakan sesuatu yang luar biasa bersama-sama.",
-      button: "Hubungi Kami",
+      button: "Hubungi Saya",
     },
     footer: {
       copyright: "© 2024 Bayu Septian Nadser. Semua hak dilindungi.",
@@ -229,25 +229,25 @@ export default function Portfolio() {
     {
       id: 1,
       title: "Nike Campaign Design",
-      image: "/placeholder.svg?height=320&width=480&text=Nike+Campaign",
+      image: "/assets/img/icon.png",
       description: "Modern sports campaign design",
     },
     {
       id: 2,
       title: "Mobile App Interface",
-      image: "/placeholder.svg?height=320&width=480&text=Mobile+App+UI",
+      image: "/assets/img/infografis.png",
       description: "Clean mobile application design",
     },
     {
       id: 3,
       title: "E-commerce Website",
-      image: "/placeholder.svg?height=320&width=480&text=E-commerce+Design",
+      image: "/assets/img/logo.png",
       description: "Modern e-commerce platform",
     },
     {
       id: 4,
       title: "Dashboard Design",
-      image: "/placeholder.svg?height=320&width=480&text=Dashboard+UI",
+      image: "/assets/img/poster-ig.png",
       description: "Analytics dashboard interface",
     },
   ]
@@ -388,39 +388,39 @@ export default function Portfolio() {
                 onClick={handleEmailClick}
                 className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-3 rounded-none font-semibold"
               >
-                {t.hero.contactUs}
+                {t.hero.contactMe}
               </Button>
 
               {/* Social Media Icons */}
               <div className="space-y-4">
-                <div className="text-sm text-gray-400">{t.hero.followUs}</div>
+                <div className="text-sm text-gray-400">{t.hero.followMe}</div>
                 <div className="flex space-x-4">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/bayuseptiannadser/"
                     className="w-10 h-10 bg-gray-800 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors"
                   >
                     <Linkedin size={20} />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/bayuseptiannads_"
                     className="w-10 h-10 bg-gray-800 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors"
                   >
                     <Instagram size={20} />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.youtube.com/@belajardesain_yuk"
                     className="w-10 h-10 bg-gray-800 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors"
                   >
                     <Youtube size={20} />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.behance.net/bayuseptian_"
                     className="w-10 h-10 bg-gray-800 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors"
                   >
                     <BehanceIcon size={20} />
                   </a>
                   <a
-                    href="#"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=bayuseptiann355@gmail.com"
                     className="w-10 h-10 bg-gray-800 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors"
                   >
                     <Mail size={20} />
