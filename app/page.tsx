@@ -609,6 +609,14 @@ export default function Portfolio() {
 
           {/* Motion Graphics */}
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+            <div className="lg:order-1 relative h-80 rounded-lg overflow-hidden">
+                <Image
+                  src="/assets/img/icon.png"
+                  alt="Motion Graphics Preview"
+                  layout="fill"
+                  objectFit="cover"
+                />
+            </div>
             <div className="lg:order-2">
               <h3 className="text-3xl font-bold mb-4">{t.services.motion.title}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">{t.services.motion.description}</p>
@@ -630,14 +638,7 @@ export default function Portfolio() {
               <div className="absolute top-4 right-4 w-20 h-20 bg-blue-600 rounded-full opacity-80"></div>
               <div className="absolute bottom-4 left-4 w-32 h-32 bg-purple-600 rounded-full opacity-60"></div>
             </div> */}
-            <div className="lg:order-1 relative h-80 rounded-lg overflow-hidden">
-              <Image
-                src="/assets/img/icon.png"
-                alt="Motion Graphics Preview"
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
+
           </div>
 
           {/* Print Design */}
