@@ -52,21 +52,21 @@ const translations = {
     services: {
       title: "Services",
       uiux: {
-        title: "UI/UX Design",
+        title: "Product Design",
         description:
-          "Well, I'm a professional graphic designer with more than 1 year experience in this world of UI/UX design. I will work on your projects and you will get some amazing experience in my service. You will be amazed by my quality of work, thats promise!",
+          "Well, I'm a professional graphic designer with more than 1 year of experience in the world of product design. I will work on your projects and you will get an amazing experience with my service. You will be amazed by the quality of my work — that's a promise!",
         button: "See More Projects",
       },
       motion: {
-        title: "Motion Graphics",
+        title: "Icon Graphics",
         description:
-          "Well, I have more than 2 year experience in this world of motion graphics design. I will work on your projects and you will get some amazing experience in my service. You will be amazed by my quality of work, thats promise!",
+          "Well, I have more than 2 years of experience in the world of icon graphics design. I will work on your projects and provide you with an amazing experience through my service. You will be amazed by the quality of my work — that's a promise!",
         button: "See More Projects",
       },
       print: {
-        title: "Print Design",
+        title: "Advertising Design",
         description:
-          "Well, I'm a professional graphic designer with more than 2 year experience in this world of print design (flyer, poster, banner, brochure, etc). I will work on your projects and you will get some amazing experience in my service. You will be amazed by my quality of work, thats promise!",
+          "Well, I'm a professional graphic designer with more than 2 years of experience in the world of advertising design (flyers, posters, banners, brochures, etc). I will work on your projects and provide you with an amazing experience through my service. You will be amazed by the quality of my work — that's a promise!",
         button: "See More Projects",
       },
     },
@@ -117,21 +117,21 @@ const translations = {
     services: {
       title: "Layanan",
       uiux: {
-        title: "UI/UX Design",
+        title: "Desain Produk",
         description:
-          "Saya adalah seorang desainer grafis profesional dengan pengalaman lebih dari 1 tahun di dunia UI/UX design. Saya akan mengerjakan proyek Anda dan Anda akan mendapatkan pengalaman yang luar biasa dalam layanan saya. Anda akan terpukau dengan kualitas kerja saya, itu janji!",
-        button: "Lihat Lebih Banyak Proyek",
+          "Saya adalah seorang desainer grafis profesional dengan pengalaman lebih dari 1 tahun dalam dunia desain produk. Saya akan mengerjakan proyek Anda dengan sepenuh hati agar memberikan pengalaman yang luar biasa melalui layanan saya. Anda akan terkesan dengan kualitas hasil kerja saya — itu janji!",
+        button: "Lihat Proyek Lainnya",
       },
       motion: {
-        title: "Motion Graphics",
+        title: "Desain Ikon",
         description:
-          "Saya memiliki pengalaman lebih dari 2 tahun di dunia motion graphics design. Saya akan mengerjakan proyek Anda dan Anda akan mendapatkan pengalaman yang luar biasa dalam layanan saya. Anda akan terpukau dengan kualitas kerja saya, itu janji!",
+          "Saya memiliki pengalaman lebih dari 2 tahun dalam dunia desain ikon grafis. Saya akan mengerjakan proyek Anda dan memberikan pengalaman luar biasa melalui layanan saya. Anda akan terkesan dengan kualitas hasil kerja saya — itu janji!",
         button: "Lihat Lebih Banyak Proyek",
       },
       print: {
-        title: "Print Design",
+        title: "Desain Iklan",
         description:
-          "Saya adalah seorang desainer grafis profesional dengan pengalaman lebih dari 2 tahun di dunia print design (flyer, poster, banner, brosur, dll). Saya akan mengerjakan proyek Anda dan Anda akan mendapatkan pengalaman yang luar biasa dalam layanan saya. Anda akan terpukau dengan kualitas kerja saya, itu janji!",
+          "Saya adalah desainer grafis profesional dengan pengalaman lebih dari 2 tahun dalam dunia desain iklan (seperti flyer, poster, banner, brosur, dll). Saya akan mengerjakan proyek Anda dan memberikan pengalaman luar biasa melalui layanan saya. Anda akan terkesan dengan kualitas hasil kerja saya — itu janji!",
         button: "Lihat Lebih Banyak Proyek",
       },
     },
@@ -229,26 +229,32 @@ export default function Portfolio() {
     {
       id: 1,
       title: "Nike Campaign Design",
-      image: "/assets/img/icon.png",
+      image: "/assets/img/productdesign.png",
       description: "Modern sports campaign design",
     },
     {
       id: 2,
-      title: "Mobile App Interface",
-      image: "/assets/img/infografis.png",
-      description: "Clean mobile application design",
+      title: "Redesain Molring",
+      image: "/assets/img/productdesign2.png",
+      description: "Me-redesain sebuah packaging produk UMKM yaitu Molring menjadi desain baru",
     },
     {
       id: 3,
-      title: "E-commerce Website",
-      image: "/assets/img/logo.png",
-      description: "Modern e-commerce platform",
+      title: "Redesain Packaging Tricks",
+      image: "/assets/img/productdesign3.png",
+      description: "Membuat redesain packaging produk Tricks Potato",
     },
     {
       id: 4,
-      title: "Dashboard Design",
-      image: "/assets/img/poster-ig.png",
-      description: "Analytics dashboard interface",
+      title: "Display Box",
+      image: "/assets/img/productdesign4.png",
+      description: "desain display box untuk produk permen Super Zuper",
+    },
+    {
+      id: 5,
+      title: "Promotion ONIX Parfume",
+      image: "/assets/img/productdesign5.png",
+      description: "promosi produk ONIX Parfume melalui feeds Instagram",
     },
   ]
 
@@ -460,12 +466,19 @@ export default function Portfolio() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">{t.about.title}</h2>
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg leading-relaxed mb-8">{t.about.description}</p>
-            <div className="w-24 h-24 mx-auto">
-              <svg viewBox="0 0 100 100" className="w-full h-full">
-                <path d="M20 80 L50 20 L80 80 Z" stroke="currentColor" strokeWidth="2" fill="none" />
-                <circle cx="50" cy="60" r="3" fill="currentColor" />
-              </svg>
+            <p className="text-lg leading-relaxed mb-12">{t.about.description}</p>
+
+            {/* Professional Photo Section */}
+            <div className="mb-12">
+              <div className="w-48 h-48 mx-auto mb-6 relative">
+                <Image
+                  src="/assets/img/profil.jpg"
+                  alt="Bayu Septian Nadser - Professional Photo"
+                  width={300}
+                  height={300}
+                  className="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -583,7 +596,7 @@ export default function Portfolio() {
             <div>
               <h3 className="text-3xl font-bold mb-4">{t.services.uiux.title}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">{t.services.uiux.description}</p>
-              <Link href="/projects/uiux" onClick={() => window.scrollTo(0, 0)}>
+              <Link href="/projects/product-design" onClick={() => window.scrollTo(0, 0)}>
                 <Button
                   variant="outline"
                   className="border-black text-black hover:bg-black hover:text-white bg-transparent"
@@ -599,7 +612,7 @@ export default function Portfolio() {
             <div className="lg:order-2">
               <h3 className="text-3xl font-bold mb-4">{t.services.motion.title}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">{t.services.motion.description}</p>
-              <Link href="/projects/motion-graphics" onClick={() => window.scrollTo(0, 0)}>
+              <Link href="/projects/icon-graphics" onClick={() => window.scrollTo(0, 0)}>
                 <Button
                   variant="outline"
                   className="border-black text-black hover:bg-black hover:text-white bg-transparent"
@@ -608,7 +621,7 @@ export default function Portfolio() {
                 </Button>
               </Link>
             </div>
-            <div className="lg:order-1 relative h-80 bg-gradient-to-br from-blue-400 via-purple-500 to-yellow-400 rounded-lg overflow-hidden">
+            {/* <div className="lg:order-1 relative h-80 bg-gradient-to-br from-blue-400 via-purple-500 to-yellow-400 rounded-lg overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
                   <div className="w-0 h-0 border-l-[12px] border-l-transparent border-r-[12px] border-r-transparent border-b-[20px] border-b-black ml-1"></div>
@@ -616,16 +629,31 @@ export default function Portfolio() {
               </div>
               <div className="absolute top-4 right-4 w-20 h-20 bg-blue-600 rounded-full opacity-80"></div>
               <div className="absolute bottom-4 left-4 w-32 h-32 bg-purple-600 rounded-full opacity-60"></div>
+            </div> */}
+            <div className="lg:order-1 relative h-80 rounded-lg overflow-hidden">
+              <Image
+                src="/assets/img/icon.png"
+                alt="Motion Graphics Preview"
+                layout="fill"
+                objectFit="cover"
+              />
             </div>
           </div>
 
           {/* Print Design */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="bg-gray-300 h-80 rounded-lg"></div>
+            {/* <div className="bg-gray-300 h-80 rounded-lg"></div> */}
+            <div className="h-80 rounded-lg overflow-hidden">
+              <img
+                src="/assets/img/iklan1.png"
+                alt="Print Design Preview"
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div>
               <h3 className="text-3xl font-bold mb-4">{t.services.print.title}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">{t.services.print.description}</p>
-              <Link href="/projects/print-design" onClick={() => window.scrollTo(0, 0)}>
+              <Link href="/projects/advertising-design" onClick={() => window.scrollTo(0, 0)}>
                 <Button
                   variant="outline"
                   className="border-black text-black hover:bg-black hover:text-white bg-transparent"
